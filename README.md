@@ -82,7 +82,7 @@ $ git reset
 
 ### Reset the staged changes and move the HEAD pointer to the previous commit:
 
-"Uncommit" the last commit ('HEAD~1 refers to the commit before the current one').
+"Uncommit" the last commit (HEAD~1 refers to the commit before the current one).
 
 ```bash
 $ git reset HEAD~1
