@@ -71,3 +71,27 @@ $ git merge <current_branch>
 ```bash
 $ git merge <source_branch> <target_branch>
 ```
+
+## Reset Operations
+
+### Reset staged changes to the state of the last commit:
+```bash
+$ git reset
+# local changes in working directory remain intact.
+```
+
+### Reset the staged changes and move the HEAD pointer to the previous commit:
+
+"Uncommit" the last commit ('HEAD~1 refers to the commit before the current one').
+
+```bash
+$ git reset HEAD~1
+# local changes in working directory remain intact.
+```
+
+### Reset both staged and working directory changes to the previous commit:
+
+```bash
+$ git reset --hard HEAD~1
+# this command will delete any changes made to the working directory (i.e. local files) !
+```
